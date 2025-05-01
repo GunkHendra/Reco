@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { Input } from "@/components/ui/input"
-import Link from "next/link";
+// import { Input } from "@/components/ui/input"
+// import Link from "next/link";
 import Footer from "@/components/footer";
 import { Sparkles, Scale, Link as LinkIcon, Wallet, LineChart, Users } from "lucide-react";
 
@@ -68,7 +68,7 @@ export default function Home() {
                   <div className="text-primary text-3xl font-bold mb-4">2</div>
                   <h3 className="text-xl font-semibold mb-2">Let the AI Compare</h3>
                   <p className="text-muted-foreground">
-                    Our system searches, analyzes, and ranks the best options so you don't have to do the digging.
+                    Our system searches, analyzes, and ranks the best options so you don&#39;t have to do the digging.
                   </p>
                 </div>
               </div>
@@ -77,7 +77,7 @@ export default function Home() {
                 <div className="group bg-card/20 p-6 lg:flex xl:flex-col xl:gap-0 lg:gap-6 lg:items-center rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
                   <div className="text-primary text-3xl font-bold mb-4 lg:mb-0 xl:mb-4">3</div>
                   <div className="lg:text-start xl:text-center">
-                    <h3 className="text-xl font-semibold mb-2">Pick What's Perfect</h3>
+                    <h3 className="text-xl font-semibold mb-2">Pick What&#39;s Perfect</h3>
                     <p className="text-muted-foreground">
                       Instantly get links, breakdowns, and comparisons - then just choose what works best for you.
                     </p>
@@ -97,7 +97,7 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center gap-4 text-center">
             <h1 className="text-4xl xl:text-7xl drop-shadow-2xl font-bold text-primary" data-aos="fade-up" data-aos-delay="100">Why RECO?</h1>
             <div className="text-lg xl:text-xl drop-shadow-2xl text-primary/80 max-w-7xl" data-aos="fade-up" data-aos-delay="200">
-              <h2>RECO is not just another recommendation tool. It's a game-changer in the world of online shopping. With its unique features and user-centric design, RECO ensures that you find the perfect product without the hassle of endless research.</h2>
+              <h2>RECO is not just another recommendation tool. It&#39;s a game-changer in the world of online shopping. With its unique features and user-centric design, RECO ensures that you find the perfect product without the hassle of endless research.</h2>
             </div>
           </div>
         </section>
@@ -144,7 +144,7 @@ export default function Home() {
                   <h3 className="text-xl font-semibold">Instant Links</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Skip the hunt — we'll give you direct links to the best options right after the recommendation.
+                  Skip the hunt — we&#39;ll give you direct links to the best options right after the recommendation.
                 </p>
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function Home() {
                   <h3 className="text-xl font-semibold">Smart Budget Matching</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Tell us your budget, and we'll only show options that fit — no more falling in love with things you can't afford.
+                  Tell us your budget, and we&#39;ll only show options that fit — no more falling in love with things you can&#39;t afford.
                 </p>
               </div>
             </div>

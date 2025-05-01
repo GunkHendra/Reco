@@ -4,15 +4,15 @@ import { MenuIcon, XIcon } from "lucide-react";
 import Link from "next/link";
 import {
     NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuIndicator,
+    // NavigationMenuContent,
+    // NavigationMenuIndicator,
     NavigationMenuItem,
     NavigationMenuLink,
     NavigationMenuList,
-    NavigationMenuTrigger,
-    NavigationMenuViewport,
+    // NavigationMenuTrigger,
+    // NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
-import Image from "next/image";
+// import Image from "next/image";
 
 
 const menu = [
@@ -22,7 +22,7 @@ const menu = [
     },
     {
         title: "Chat",
-        url: "/chat/1",
+        url: "/chat",
     },
     {
         title: "About Us",

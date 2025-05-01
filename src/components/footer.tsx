@@ -43,10 +43,10 @@ export default function Footer() {
                     <div className="flex flex-col items-center justify-center w-full px-4 gap-4">
                         {/* Social Icons */}
                         <div className="flex space-x-4">
-                            <a href="#" className="hover:text-white"><SiInstagram size={30} /></a>
-                            <a href="#" className="hover:text-white"><SiLinkedin size={30} /></a>
-                            <a href="#" className="hover:text-white"><SiFacebook size={30} /></a>
-                            <a href="#" className="hover:text-white"><SiGithub size={30} /></a>
+                            <Link href="#" className="hover:text-white"><SiInstagram size={30} /></Link>
+                            <Link href="#" className="hover:text-white"><SiLinkedin size={30} /></Link>
+                            <Link href="#" className="hover:text-white"><SiFacebook size={30} /></Link>
+                            <Link href="#" className="hover:text-white"><SiGithub size={30} /></Link>
                         </div>
 
                         {/* Copyright */}
@@ -71,11 +71,11 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg 2xl:text-xl font-semibold mb-3">Quick Links</h3>
                         <ul className="space-y-2 2xl:text-md text-sm">
-                            <li><a href="/" className="hover:underline">Home</a></li>
-                            <li><a href="/features" className="hover:underline">Features</a></li>
-                            <li><a href="/about" className="hover:underline">About Us</a></li>
-                            <li><a href="/blog" className="hover:underline">Blog</a></li>
-                            <li><a href="/faq" className="hover:underline">FAQ</a></li>
+                            <li><Link href="/" className="hover:underline">Home</Link></li>
+                            <li><Link href="/features" className="hover:underline">Features</Link></li>
+                            <li><Link href="/about" className="hover:underline">About Us</Link></li>
+                            <li><Link href="/blog" className="hover:underline">Blog</Link></li>
+                            <li><Link href="/faq" className="hover:underline">FAQ</Link></li>
                         </ul>
                     </div>
 
@@ -83,10 +83,10 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-semibold mb-3 2xl:text-xl">Support</h3>
                         <ul className="space-y-2 text-sm 2xl:text-md">
-                            <li><a href="/help" className="hover:underline">Help Center</a></li>
-                            <li><a href="/guide" className="hover:underline">User Guide</a></li>
-                            <li><a href="/contact" className="hover:underline">Contact</a></li>
-                            <li><a href="/report" className="hover:underline">Report an Issue</a></li>
+                            <li><Link href="/help" className="hover:underline">Help Center</Link></li>
+                            <li><Link href="/guide" className="hover:underline">User Guide</Link></li>
+                            <li><Link href="/contact" className="hover:underline">Contact</Link></li>
+                            <li><Link href="/report" className="hover:underline">Report an Issue</Link></li>
                         </ul>
                     </div>
 
@@ -105,11 +105,11 @@ export default function Footer() {
                 <div className="border-t border-primary mt-10 pt-6 px-6 flex flex-col md:flex-row justify-between items-center text-sm">
                     <p>© 2025 Recommetra. All rights reserved.</p>
                     <div className="flex gap-4 mt-4 md:mt-0">
-                        <a href="#" className="hover:text-white"><SiX size={18} /></a>
-                        <a href="#" className="hover:text-white"><SiInstagram size={18} /></a>
-                        <a href="#" className="hover:text-white"><SiLinkedin size={18} /></a>
-                        <a href="#" className="hover:text-white"><SiFacebook size={18} /></a>
-                        <a href="#" className="hover:text-white"><SiGithub size={18} /></a>
+                        <Link href="#" className="hover:text-white"><SiX size={18} /></Link>
+                        <Link href="#" className="hover:text-white"><SiInstagram size={18} /></Link>
+                        <Link href="#" className="hover:text-white"><SiLinkedin size={18} /></Link>
+                        <Link href="#" className="hover:text-white"><SiFacebook size={18} /></Link>
+                        <Link href="#" className="hover:text-white"><SiGithub size={18} /></Link>
                     </div>
                 </div>
             </div>
