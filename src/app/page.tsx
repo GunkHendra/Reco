@@ -8,120 +8,113 @@ import { Sparkles, Scale, Link as LinkIcon, Wallet, LineChart, Users } from "luc
 export default function Home() {
   return (
     <>
-      <div>
+      <div className="px-16">
         {/* First Section */}
-        <section className="h-screen flex flex-col md:justify-between md:flex-row-reverse gap-4">
-
-          {/* Image Section */}
-          <div className="md:hidden relative w-full aspect-[4/5] h-[70%] overflow-hidden rounded-xl bottom-fade-mask">
-            <Image src="/assets/illustrations/blue-wavy.jpg" alt="Fading image" fill className="w-full h-auto object-cover" />
+        <section className="h-screen justify-center items-center flex flex-col gap-8">
+          <div className="flex flex-col items-end justify-center" data-aos="fade-up" data-aos-delay="100">
+            <h1 className="text-9xl xl:text-[196px] drop-shadow-2xl font-bold text-primary">RECO</h1>
+            <div className="text-end xl:text-xl drop-shadow-2xl text-primary/80">
+              <h2>Get Your Product,</h2>
+              <h2>Faster than You Think!</h2>
+            </div>
           </div>
+        </section>
 
+        {/* Second Section */}
+        {/* <section className="h-screen justify-center items-center flex flex-col gap-12">
           <div className="relative">
-            <div>
-              <Image src="https://placehold.co/600x600.png" alt="placeholder" width={600} height={600} className="rounded-4xl hidden md:block" />
-              <Image src="https://placehold.co/250x250.png" alt="placeholder" width={250} height={250} className="hidden z-20 absolute -bottom-15 right-20 rounded-4xl 2xl:block" />
+            <div className="w-96 h-96 overflow-hidden">
+              <Image src="/assets/illustrations/blue-wavy.jpg" alt="Start Using RECO!" width={400} height={400} className="shadow-md object-cover w-full h-full" />
+            </div>
+            <div className="absolute -bottom-4 text-center w-full">
+              <h1 className="text-4xl drop-shadow-2xl font-bold text-primary">START RECO NOW!</h1>
             </div>
           </div>
 
-          {/* Text Section */}
-          <div className="flex flex-col justify-center w-full md:max-w-2xl max-h-screen px-12 gap-4">
-            <div className="text-center xl:text-start">
-              <h1 className="text-2xl sm:text-3xl font-semibold text-primary">Get Your Product,</h1>
-              <h2 className="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-secondary-foreground to-secondary bg-clip-text text-transparent">Faster than You Think</h2>
-            </div>
-            <p className="hidden xl:block">
-              Combination of cutting-edge technologies with personalized insights and a user-friendly interface, Recommetra is designed to deliver tailored product recommendation just for you.
-            </p>
-            <div className="flex w-full items-center space-x-2">
-              <Input className="hidden lg:block" type="text" placeholder="What's the best Gaming Monitor in budget range of 200$?" />
-              <Input className="lg:hidden" type="text" placeholder="What's the best Gaming Monitor for 200$?" />
-              <Button type="submit">Ask</Button>
+          <div className="flex w-full max-w-3xl items-center space-x-2" data-aos="fade-up" data-aos-delay="200">
+            <Input className="hidden lg:block" type="text" placeholder="What's the best Gaming Monitor in budget range of 200$?" />
+            <Input className="lg:hidden" type="text" placeholder="What's the best Gaming Monitor for 200$?" />
+            <Button asChild>
+              <Link href="/chat/1">Ask</Link>
+            </Button>
+          </div>
+        </section> */}
+
+        {/* Third Section */}
+        <section className="h-screen justify-center items-center flex flex-col gap-8 xl:gap-12">
+          {/* RECO Explanation */}
+          <div className="flex flex-col items-center justify-center gap-2">
+            <h1 className="text-4xl xl:text-7xl drop-shadow-2xl font-bold text-primary text-center" data-aos="fade-up" data-aos-delay="100">What is RECO?</h1>
+            <div className="text-center max-w-7xl text-lg xl:text-xl drop-shadow-2xl text-primary/80" data-aos="fade-up" data-aos-delay="200">
+              <h2>RECO is an AI-powered platform designed to provide personalized product recommendations tailored to your unique preferences and needs. <span className="hidden xl:inline">By analyzing your inputs, such as budget, purpose, and style, RECO simplifies the decision-making process, ensuring you find the perfect product without the hassle of endless research.</span></h2>
             </div>
           </div>
-        </section>
 
-        <section className="h-screen flex items-center justify-center py-2 space-x-40">
-          <div data-aos="fade-up-right">
-            <Image src="https://placehold.co/600x600.png" alt="placeholder" width={600} height={600} className="rounded-4xl" />
-          </div>
-          <div className="flex flex-col gap-8 items-start" data-aos="fade-up-left">
-            <div className="space-y-4">
-              <h2 className="text-5xl font-semibold text-primary">Overwhelmed by choices?</h2>
-              <p className="text-primary text-lg">
-                With so many reviews, tabs, and specs to compare, finding the right product can feel impossible.
-              </p>
-              <ul className="list-disc list-inside text-primary space-y-1 pl-2">
-                <li>Hours spent watching YouTube reviews</li>
-                <li>Conflicting advice from different sources</li>
-                <li>Still unsure what's actually worth it</li>
-              </ul>
-            </div>
-            <div className="space-y-4">
-              <h2 className="text-5xl font-semibold text-primary">Let Recommetra Decide Smarter</h2>
-              <p className="text-primary text-lg">
-                Just tell us what you need — Recommetra delivers smart, personalized product recommendations using AI.
-              </p>
-              <ul className="list-disc list-inside text-primary space-y-1 pl-2">
-                <li>Instant suggestions based on your preferences</li>
-                <li>Side-by-side comparisons with reasoning</li>
-                <li>No more research rabbit holes</li>
-              </ul>
-              <Button className="mt-4">
-                Try Recommetra Now
-              </Button>
-            </div>
-          </div>
-        </section>
-
-        <section className="h-screen py-2 flex justify-center items-center">
-          <div className="max-w-7xl px-8 text-center">
-            <div data-aos="fade-up">
-              <h2 className="text-5xl font-semibold text-primary mb-4">How Recommetra Works</h2>
-              <p className="text-muted-foreground text-lg mb-12">
-                Just a few steps to find your perfect product — no stress, no overthinking.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="300">
-              <div className="group bg-card p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105">
-                <div className="text-primary text-3xl font-bold mb-4">1</div>
-                <h3 className="text-xl font-semibold mb-2">Describe What You Need</h3>
-                <p className="text-muted-foreground">
-                  Tell Recommetra your preferences — like budget, purpose, or style. Our chat understands your needs.
-                </p>
+          {/* RECO Way of Works */}
+          <div className="max-w-7xl text-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+              <div data-aos="fade-up" data-aos-delay="100">
+                <div className="group bg-card/20 p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
+                  <div className="text-primary text-3xl font-bold mb-4">1</div>
+                  <h3 className="text-xl font-semibold mb-2">Describe What You Need</h3>
+                  <p className="text-muted-foreground">
+                    Tell RECO your preferences - like budget, purpose, or style. Our chat understands your needs.
+                  </p>
+                </div>
               </div>
 
-              <div className="group bg-card p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105">
-                <div className="text-primary text-3xl font-bold mb-4">2</div>
-                <h3 className="text-xl font-semibold mb-2">Let the AI Compare</h3>
-                <p className="text-muted-foreground">
-                  Our system searches, analyzes, and ranks the best options so you don't have to do the digging.
-                </p>
+              <div data-aos="fade-up" data-aos-delay="100">
+                <div className="group bg-card/20 p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
+                  <div className="text-primary text-3xl font-bold mb-4">2</div>
+                  <h3 className="text-xl font-semibold mb-2">Let the AI Compare</h3>
+                  <p className="text-muted-foreground">
+                    Our system searches, analyzes, and ranks the best options so you don't have to do the digging.
+                  </p>
+                </div>
               </div>
 
-              <div className="group bg-card p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105">
-                <div className="text-primary text-3xl font-bold mb-4">3</div>
-                <h3 className="text-xl font-semibold mb-2">Pick What's Perfect</h3>
-                <p className="text-muted-foreground">
-                  Instantly get links, breakdowns, and comparisons — then just choose what works best for you.
-                </p>
+              <div data-aos="fade-up" data-aos-delay="100" className="lg:col-span-2 xl:col-span-1">
+                <div className="group bg-card/20 p-6 lg:flex xl:flex-col xl:gap-0 lg:gap-6 lg:items-center rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
+                  <div className="text-primary text-3xl font-bold mb-4 lg:mb-0 xl:mb-4">3</div>
+                  <div className="lg:text-start xl:text-center">
+                    <h3 className="text-xl font-semibold mb-2">Pick What's Perfect</h3>
+                    <p className="text-muted-foreground">
+                      Instantly get links, breakdowns, and comparisons - then just choose what works best for you.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="h-screen flex items-center justify-center py-2">
-          <div className="max-w-7xl px-8 text-center">
-            <div data-aos="fade-up">
-              <h2 className="text-5xl font-semibold text-primary mb-4">Features & Benefits</h2>
-              <p className="text-muted-foreground text-lg mb-12">
-                Everything you need to confidently choose the best product.
-              </p>
-            </div>
+        {/* Fourth Section */}
+        <section className="h-screen justify-center items-center flex flex-col">
+          <div className="max-w-7xl text-center" data-aos="fade" data-aos-delay="100">
+            <Image src="/assets/illustrations/man-sit.png" alt="Why RECO?" width={600} height={400} className="rounded-3xl mt-8" />
+          </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-left" data-aos="fade-up" data-aos-delay="300">
-              <div className="bg-card p-6 rounded-2xl shadow-sm transition hover:shadow-md">
+          <div className="flex flex-col items-center justify-center gap-4 text-center">
+            <h1 className="text-4xl xl:text-7xl drop-shadow-2xl font-bold text-primary" data-aos="fade-up" data-aos-delay="100">Why RECO?</h1>
+            <div className="text-lg xl:text-xl drop-shadow-2xl text-primary/80 max-w-7xl" data-aos="fade-up" data-aos-delay="200">
+              <h2>RECO is not just another recommendation tool. It's a game-changer in the world of online shopping. With its unique features and user-centric design, RECO ensures that you find the perfect product without the hassle of endless research.</h2>
+            </div>
+          </div>
+        </section>
+
+        {/* Fifth Section */}
+        <section className="h-screen justify-center items-center flex flex-col gap-8 xl:gap-12">
+          {/* RECO Feature & Benefit */}
+          <div className="flex flex-col items-center justify-center gap-2 text-center">
+            <h1 className="text-4xl xl:text-7xl drop-shadow-2xl font-bold text-primary" data-aos="fade-up" data-aos-delay="100">RECO Feature & Benefit</h1>
+            <div className="text-center text-lg xl:text-xl drop-shadow-2xl text-primary/80" data-aos="fade-up" data-aos-delay="200">
+              <h2>Discover how RECO can revolutionize your shopping experience with its cutting-edge features and unmatched benefits.</h2>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 text-left">
+            <div data-aos="fade-up" data-aos-delay="100">
+              <div className="group bg-card/20 p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
                 <div className="flex gap-2 items-center mb-2">
                   <Sparkles className="w-5 h-5 text-primary" aria-hidden="true" />
                   <h3 className="text-xl font-semibold">AI-Powered Recommendations</h3>
@@ -130,8 +123,10 @@ export default function Home() {
                   Get personalized product picks based on your preferences — no more endless scrolling or watching reviews.
                 </p>
               </div>
+            </div>
 
-              <div className="bg-card p-6 rounded-2xl shadow-sm transition hover:shadow-md">
+            <div data-aos="fade-up" data-aos-delay="100">
+              <div className="group bg-card/20 p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
                 <div className="flex gap-2 items-center mb-2">
                   <Scale className="w-5 h-5 text-primary" aria-hidden="true" />
                   <h3 className="text-xl font-semibold">Clear Comparisons</h3>
@@ -140,8 +135,10 @@ export default function Home() {
                   Side-by-side breakdowns of specs, prices, and reviews — so you can decide with confidence.
                 </p>
               </div>
+            </div>
 
-              <div className="bg-card p-6 rounded-2xl shadow-sm transition hover:shadow-md">
+            <div data-aos="fade-up" data-aos-delay="100">
+              <div className="group bg-card/20 p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
                 <div className="flex gap-2 items-center mb-2">
                   <LinkIcon className="w-5 h-5 text-primary" aria-hidden="true" />
                   <h3 className="text-xl font-semibold">Instant Links</h3>
@@ -150,8 +147,22 @@ export default function Home() {
                   Skip the hunt — we'll give you direct links to the best options right after the recommendation.
                 </p>
               </div>
+            </div>
 
-              <div className="bg-card p-6 rounded-2xl shadow-sm transition hover:shadow-md">
+            <div data-aos="fade-up" data-aos-delay="100" className="lg:hidden">
+              <div className="group bg-card/20 p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
+                <div className="flex gap-2 items-center mb-2">
+                  <Sparkles className="w-5 h-5 text-primary" aria-hidden="true" />
+                  <h3 className="text-xl font-semibold">And Many More!</h3>
+                </div>
+                <p className="text-muted-foreground">
+                  Explore features designed to make your shopping journey seamless, efficient, and enjoyable.
+                </p>
+              </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="100" className="hidden lg:block">
+              <div className="group bg-card/20 p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
                 <div className="flex gap-2 items-center mb-2">
                   <Wallet className="w-5 h-5 text-primary" aria-hidden="true" />
                   <h3 className="text-xl font-semibold">Smart Budget Matching</h3>
@@ -160,8 +171,10 @@ export default function Home() {
                   Tell us your budget, and we'll only show options that fit — no more falling in love with things you can't afford.
                 </p>
               </div>
+            </div>
 
-              <div className="bg-card p-6 rounded-2xl shadow-sm transition hover:shadow-md">
+            <div data-aos="fade-up" data-aos-delay="100" className="hidden lg:block">
+              <div className="group bg-card/20 p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
                 <div className="flex gap-2 items-center mb-2">
                   <LineChart className="w-5 h-5 text-primary" aria-hidden="true" />
                   <h3 className="text-xl font-semibold">Real-Time Market Insights</h3>
@@ -170,8 +183,10 @@ export default function Home() {
                   Stay up-to-date with dynamic product trends, reviews, and availability — powered by live data.
                 </p>
               </div>
+            </div>
 
-              <div className="bg-card p-6 rounded-2xl shadow-sm transition hover:shadow-md">
+            <div data-aos="fade-up" data-aos-delay="100" className="hidden lg:block">
+              <div className="group bg-card/20 p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
                 <div className="flex gap-2 items-center mb-2">
                   <Users className="w-5 h-5 text-primary" aria-hidden="true" />
                   <h3 className="text-xl font-semibold">Community-Backed Choices</h3>
@@ -182,7 +197,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section >
       </div >
       <Footer />
     </>

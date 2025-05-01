@@ -4,6 +4,8 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@import "keen-slider/keen-slider.min.css";
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -40,15 +42,16 @@
 }
 
 .dark {
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.21 0.006 285.885);
+  /* --background: oklch(0.141 0.005 285.823); */
+  --background: oklch(21% 0.006 285.885);
+  --foreground: oklch(92% 0.004 286.32);
+  --card: oklch(27.4% 0.006 286.033);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.21 0.006 285.885);
   --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(0.92 0.004 286.32);
   --primary-foreground: oklch(0.21 0.006 285.885);
-  --secondary: oklch(62.3% 0.214 259.815);
+  --secondary: oklch(44.2% 0.017 285.786);
   --secondary-foreground: oklch(90.1% 0.058 230.902);
   --muted: oklch(0.274 0.006 286.033);
   --muted-foreground: oklch(0.705 0.015 286.067);
@@ -141,8 +144,8 @@ body {
 }
 
 .bottom-fade-mask {
-  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: 100% 100%;
