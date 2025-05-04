@@ -8,11 +8,11 @@ import { Sparkles, Scale, Link as LinkIcon, Wallet, LineChart, Users } from "luc
 export default function Home() {
   return (
     <>
-      <div className="px-16">
+      <div>
         {/* First Section */}
-        <section className="h-screen justify-center items-center flex flex-col gap-8">
+        <section className="min-h-screen justify-center items-center flex flex-col gap-8">
           <div className="flex flex-col items-end justify-center" data-aos="fade-up" data-aos-delay="100">
-            <h1 className="text-9xl xl:text-[196px] drop-shadow-2xl font-bold text-primary">RECO</h1>
+            <h1 className="text-7xl md:text-9xl lg:text-[10rem] xl:text-[196px] drop-shadow-2xl font-bold text-primary">RECO</h1>
             <div className="text-end xl:text-xl drop-shadow-2xl text-primary/80">
               <h2>Get Your Product,</h2>
               <h2>Faster than You Think!</h2>
@@ -41,47 +41,45 @@ export default function Home() {
         </section> */}
 
         {/* Third Section */}
-        <section className="h-screen justify-center items-center flex flex-col gap-8 xl:gap-12">
+        <section className="min-h-screen justify-center items-center flex flex-col gap-6 md:gap-8 lg:gap-10 xl:gap-12 px-6 lg:px-12">
           {/* RECO Explanation */}
-          <div className="flex flex-col items-center justify-center gap-2">
-            <h1 className="text-4xl xl:text-7xl drop-shadow-2xl font-bold text-primary text-center" data-aos="fade-up" data-aos-delay="100">What is RECO?</h1>
-            <div className="text-center max-w-7xl text-lg xl:text-xl drop-shadow-2xl text-primary/80" data-aos="fade-up" data-aos-delay="200">
-              <h2>RECO is an AI-powered platform designed to provide personalized product recommendations tailored to your unique preferences and needs. <span className="hidden xl:inline">By analyzing your inputs, such as budget, purpose, and style, RECO simplifies the decision-making process, ensuring you find the perfect product without the hassle of endless research.</span></h2>
+          <div className="flex flex-col items-center justify-center gap-2 lg:gap-4">
+            <h1 className="text-3xl md:text-5xl lg:text-7xl drop-shadow-2xl font-bold text-primary text-center" data-aos="fade-up" data-aos-delay="100">What is RECO?</h1>
+            <div className="text-center max-w-7xl text-sm md:text-lg lg:text-xl drop-shadow-2xl text-primary/80" data-aos="fade-up" data-aos-delay="200">
+              <h2>RECO is an AI-powered platform designed to provide personalized product recommendations based on your unique preferences and needs. <span className="hidden lg:inline">By analyzing your inputs, such as budget, purpose, and style, RECO simplifies the decision-making process, ensuring you find the perfect product without the hassle of endless research.</span></h2>
             </div>
           </div>
 
           {/* RECO Way of Works */}
           <div className="max-w-7xl text-center">
-            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 xl:grid-cols-3 gap-4 md:gap-6">
               <div data-aos="fade-up" data-aos-delay="100">
-                <div className="group bg-card/20 p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
-                  <div className="text-primary text-3xl font-bold mb-4">1</div>
-                  <h3 className="text-xl font-semibold mb-2">Describe What You Need</h3>
-                  <p className="text-muted-foreground">
+                <div className="group text-start xl:text-center justify-between items-center bg-card/20 p-4 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70 gap-3">
+                  <h1 className="hidden xl:block text-primary text-3xl font-bold mb-4">1</h1>
+                  <h3 className="text-md md:text-xl lg:text-2xl font-semibold lg:mb-2"><span className="xl:hidden">1. </span>Describe What You Need</h3>
+                  <p className="text-muted-foreground text-sm md:text-lg lg:text-xl">
                     Tell RECO your preferences - like budget, purpose, or style. Our chat understands your needs.
                   </p>
                 </div>
               </div>
 
               <div data-aos="fade-up" data-aos-delay="100">
-                <div className="group bg-card/20 p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
-                  <div className="text-primary text-3xl font-bold mb-4">2</div>
-                  <h3 className="text-xl font-semibold mb-2">Let the AI Compare</h3>
-                  <p className="text-muted-foreground">
+                <div className="group text-start xl:text-center justify-between items-center bg-card/20 p-4 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70 gap-3">
+                  <h1 className="hidden xl:block text-primary text-3xl font-bold mb-4">2</h1>
+                  <h3 className="text-md md:text-xl lg:text-2xl font-semibold lg:mb-2"><span className="xl:hidden">2. </span>Let the AI Compare</h3>
+                  <p className="text-muted-foreground text-sm md:text-lg lg:text-xl">
                     Our system searches, analyzes, and ranks the best options so you don&#39;t have to do the digging.
                   </p>
                 </div>
               </div>
 
-              <div data-aos="fade-up" data-aos-delay="100" className="lg:col-span-2 xl:col-span-1">
-                <div className="group bg-card/20 p-6 lg:flex xl:flex-col xl:gap-0 lg:gap-6 lg:items-center rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
-                  <div className="text-primary text-3xl font-bold mb-4 lg:mb-0 xl:mb-4">3</div>
-                  <div className="lg:text-start xl:text-center">
-                    <h3 className="text-xl font-semibold mb-2">Pick What&#39;s Perfect</h3>
-                    <p className="text-muted-foreground">
-                      Instantly get links, breakdowns, and comparisons - then just choose what works best for you.
-                    </p>
-                  </div>
+              <div data-aos="fade-up" data-aos-delay="100">
+                <div className="group text-start xl:text-center justify-between items-center bg-card/20 p-4 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70 gap-3">
+                  <h1 className="hidden xl:block text-primary text-3xl font-bold mb-4">3</h1>
+                  <h3 className="text-md md:text-xl lg:text-2xl font-semibold lg:mb-2"><span className="xl:hidden">3. </span>Pick What&#39;s Perfect</h3>
+                  <p className="text-muted-foreground text-sm md:text-lg lg:text-xl">
+                    Instantly get links, breakdowns, and comparisons - then just choose what works best for you.
+                  </p>
                 </div>
               </div>
             </div>
@@ -89,109 +87,109 @@ export default function Home() {
         </section>
 
         {/* Fourth Section */}
-        <section className="h-screen justify-center items-center flex flex-col">
-          <div className="max-w-7xl text-center" data-aos="fade" data-aos-delay="100">
-            <Image src="/assets/illustrations/man-sit.png" alt="Why RECO?" width={600} height={400} className="rounded-3xl mt-8" />
+        <section className="min-h-screen justify-center items-center flex flex-col xl:flex-row-reverse xl:gap-4 px-6 lg:px-12">
+          <div className="max-h-5/12 text-center" data-aos="fade" data-aos-delay="100">
+            <Image src="/assets/illustrations/man-sit.png" alt="Why RECO?" width={600} height={400} className="rounded-3xl h-auto" />
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-4 text-center">
-            <h1 className="text-4xl xl:text-7xl drop-shadow-2xl font-bold text-primary" data-aos="fade-up" data-aos-delay="100">Why RECO?</h1>
-            <div className="text-lg xl:text-xl drop-shadow-2xl text-primary/80 max-w-7xl" data-aos="fade-up" data-aos-delay="200">
+          <div className="flex flex-col items-start justify-center gap-2 lg:gap-4 text-start">
+            <h1 className="text-3xl md:text-5xl lg:text-7xl drop-shadow-2xl font-bold text-primary" data-aos="fade-up" data-aos-delay="100">Why RECO?</h1>
+            <div className="max-w-7xl text-sm md:text-lg lg:text-xl drop-shadow-2xl text-primary/80 text-justify xl:text-start" data-aos="fade-up" data-aos-delay="200">
               <h2>RECO is not just another recommendation tool. It&#39;s a game-changer in the world of online shopping. With its unique features and user-centric design, RECO ensures that you find the perfect product without the hassle of endless research.</h2>
             </div>
           </div>
         </section>
 
         {/* Fifth Section */}
-        <section className="h-screen justify-center items-center flex flex-col gap-8 xl:gap-12">
+        <section className="min-h-screen justify-center items-center flex flex-col gap-6 md:gap-8 lg:gap-10 xl:gap-12 px-6 lg:px-12 mt-16">
           {/* RECO Feature & Benefit */}
-          <div className="flex flex-col items-center justify-center gap-2 text-center">
-            <h1 className="text-4xl xl:text-7xl drop-shadow-2xl font-bold text-primary" data-aos="fade-up" data-aos-delay="100">RECO Feature & Benefit</h1>
-            <div className="text-center text-lg xl:text-xl drop-shadow-2xl text-primary/80" data-aos="fade-up" data-aos-delay="200">
+          <div className="flex flex-col items-center justify-center gap-2 lg:gap-4 text-center">
+            <h1 className="text-3xl md:text-5xl lg:text-7xl drop-shadow-2xl font-bold text-primary" data-aos="fade-up" data-aos-delay="100">Feature & Benefit</h1>
+            <div className="text-center max-w-7xl text-sm md:text-lg lg:text-xl drop-shadow-2xl text-primary/80" data-aos="fade-up" data-aos-delay="200">
               <h2>Discover how RECO can revolutionize your shopping experience with its cutting-edge features and unmatched benefits.</h2>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 text-left">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 text-left items-stretch">
             <div data-aos="fade-up" data-aos-delay="100">
-              <div className="group bg-card/20 p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
+              <div className="group bg-card/20 p-4 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70 h-full">
                 <div className="flex gap-2 items-center mb-2">
                   <Sparkles className="w-5 h-5 text-primary" aria-hidden="true" />
-                  <h3 className="text-xl font-semibold">AI-Powered Recommendations</h3>
+                  <h3 className="text-md md:text-lg lg:text-xl font-semibold">AI-Powered Recommendations</h3>
                 </div>
-                <p className="text-muted-foreground">
-                  Get personalized product picks based on your preferences — no more endless scrolling or watching reviews.
+                <p className="text-muted-foreground text-sm md:text-lg lg:text-xl">
+                  Personalized product picks tailored to your needs — no more endless scrolling or reviews.
                 </p>
               </div>
             </div>
 
             <div data-aos="fade-up" data-aos-delay="100">
-              <div className="group bg-card/20 p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
+              <div className="group bg-card/20 p-4 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70 h-full">
                 <div className="flex gap-2 items-center mb-2">
                   <Scale className="w-5 h-5 text-primary" aria-hidden="true" />
-                  <h3 className="text-xl font-semibold">Clear Comparisons</h3>
+                  <h3 className="text-md md:text-lg lg:text-xl font-semibold">Clear Comparisons</h3>
                 </div>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-sm md:text-lg lg:text-xl">
                   Side-by-side breakdowns of specs, prices, and reviews — so you can decide with confidence.
                 </p>
               </div>
             </div>
 
             <div data-aos="fade-up" data-aos-delay="100">
-              <div className="group bg-card/20 p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
+              <div className="group bg-card/20 p-4 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70 h-full">
                 <div className="flex gap-2 items-center mb-2">
                   <LinkIcon className="w-5 h-5 text-primary" aria-hidden="true" />
-                  <h3 className="text-xl font-semibold">Instant Links</h3>
+                  <h3 className="text-md md:text-lg lg:text-xl font-semibold">Instant Links</h3>
                 </div>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-sm md:text-lg lg:text-xl">
                   Skip the hunt — we&#39;ll give you direct links to the best options right after the recommendation.
                 </p>
               </div>
             </div>
 
             <div data-aos="fade-up" data-aos-delay="100" className="lg:hidden">
-              <div className="group bg-card/20 p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
+              <div className="group bg-card/20 p-4 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70 h-full">
                 <div className="flex gap-2 items-center mb-2">
                   <Sparkles className="w-5 h-5 text-primary" aria-hidden="true" />
-                  <h3 className="text-xl font-semibold">And Many More!</h3>
+                  <h3 className="text-md md:text-lg lg:text-xl font-semibold">And Many More!</h3>
                 </div>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-sm md:text-lg lg:text-xl">
                   Explore features designed to make your shopping journey seamless, efficient, and enjoyable.
                 </p>
               </div>
             </div>
 
             <div data-aos="fade-up" data-aos-delay="100" className="hidden lg:block">
-              <div className="group bg-card/20 p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
+              <div className="group bg-card/20 p-4 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70 h-full">
                 <div className="flex gap-2 items-center mb-2">
                   <Wallet className="w-5 h-5 text-primary" aria-hidden="true" />
-                  <h3 className="text-xl font-semibold">Smart Budget Matching</h3>
+                  <h3 className="text-md md:text-lg lg:text-xl font-semibold">Smart Budget Matching</h3>
                 </div>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-sm md:text-lg lg:text-xl">
                   Tell us your budget, and we&#39;ll only show options that fit — no more falling in love with things you can&#39;t afford.
                 </p>
               </div>
             </div>
 
             <div data-aos="fade-up" data-aos-delay="100" className="hidden lg:block">
-              <div className="group bg-card/20 p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
+              <div className="group bg-card/20 p-4 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70 h-full">
                 <div className="flex gap-2 items-center mb-2">
                   <LineChart className="w-5 h-5 text-primary" aria-hidden="true" />
-                  <h3 className="text-xl font-semibold">Real-Time Market Insights</h3>
+                  <h3 className="text-md md:text-lg lg:text-xl font-semibold">Real-Time Market Insights</h3>
                 </div>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-sm md:text-lg lg:text-xl">
                   Stay up-to-date with dynamic product trends, reviews, and availability — powered by live data.
                 </p>
               </div>
             </div>
 
             <div data-aos="fade-up" data-aos-delay="100" className="hidden lg:block">
-              <div className="group bg-card/20 p-6 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70">
+              <div className="group bg-card/20 p-4 rounded-2xl shadow-md transition transform duration-300 hover:scale-105 hover:bg-card/70 h-full">
                 <div className="flex gap-2 items-center mb-2">
                   <Users className="w-5 h-5 text-primary" aria-hidden="true" />
-                  <h3 className="text-xl font-semibold">Community-Backed Choices</h3>
+                  <h3 className="text-md md:text-lg lg:text-xl font-semibold">Community-Backed Choices</h3>
                 </div>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-sm md:text-lg lg:text-xl">
                   See what others with similar preferences chose and loved — recommendations you can trust, not just algorithms.
                 </p>
               </div>

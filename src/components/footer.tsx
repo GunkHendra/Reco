@@ -27,7 +27,7 @@ const menu = [
 export default function Footer() {
     return (
         <footer>
-            <div className="lg:hidden bg-gradient-to-tr from-primary/10 to-background text-primary pb-6 border-radius-2xl shadow-md mt-10">
+            <div className="xl:hidden bg-gradient-to-tr from-primary/10 to-background text-primary pb-6 border-radius-2xl shadow-md mt-10">
                 <div className="flex flex-col items-center space-y-8">
                     {/* Links */}
                     <ul className="flex flex-col items-center justify-center w-full">
@@ -54,7 +54,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="hidden lg:block bg-gradient-to-tr from-primary/10 to-background text-primary pt-10 pb-5 mt-18">
+            <div className="hidden xl:block bg-gradient-to-tr from-primary/10 to-background text-primary pt-10 pb-5 mt-18">
                 <div className="w-full px-4 xl:px-16 2xl:px-24 flex justify-between">
                     {/* Logo & Description */}
                     <div className="flex items-center space-x-4 ml-3">

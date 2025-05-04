@@ -12,6 +12,7 @@ import {
     // NavigationMenuTrigger,
     // NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
+import { usePathname } from "next/navigation";
 // import Image from "next/image";
 
 
@@ -29,13 +30,14 @@ const menu = [
         url: "/about",
     },
     {
-        title: "Login",
-        url: "/login",
+        title: "Login/Register",
+        url: "/auth",
     },
 ]
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const pathname = usePathname();
 
     return (
         // <nav className="flex justify-between items-center h-16 bg-background fixed top-0 z-50 w-full">
@@ -61,7 +63,7 @@ export default function Navbar() {
                     <NavigationMenuList className="flex">
                         {menu.map((item, index) => (
                             <NavigationMenuItem key={index}>
-                                <NavigationMenuLink href={item.url} className="px-3 text-primary">
+                                <NavigationMenuLink href={item.url} className={`px-3 text-primary/70 ${pathname === item.url ? "text-primary" : ""}`}>
                                     {item.title}
                                 </NavigationMenuLink>
                             </NavigationMenuItem>
