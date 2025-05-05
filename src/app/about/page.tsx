@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Footer from "@/components/footer";
+// import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
@@ -26,7 +26,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-2 xl:gap-4 md:max-w-md lg:max-w-lg xl:max-w-none">
               <h1 className="text-2xl lg:text-4xl drop-shadow-2xl font-semibold text-primary">RECO: Your Smart Shopping Companion</h1>
-              <h2 className="text-sm lg:text-md drop-shadow-2xl text-primary/80 text-justify">RECO is an AI-powered platform designed to help you make smarter and faster product decisions. Whether you're searching for the best tech gadgets or budget-friendly options, RECO analyzes your preferences and gives you personalized recommendations — so you don&#39;t have to spend hours watching reviews or comparing products manually.</h2>
+              <h2 className="text-sm lg:text-md drop-shadow-2xl text-primary/80 text-justify">RECO is an AI-powered platform designed to help you make smarter and faster product decisions. Whether you&#39;re searching for the best tech gadgets or budget-friendly options, RECO analyzes your preferences and gives you personalized recommendations — so you don&#39;t have to spend hours watching reviews or comparing products manually.</h2>
               <div className="flex w-full max-w-3xl items-center space-x-2 mt-1">
                 <Input className="hidden lg:block" type="text" placeholder="What's the best Gaming Monitor in budget range of 200$?" />
                 <Input className="lg:hidden" type="text" placeholder="What's the best Gaming Monitor for 200$?" />
@@ -44,7 +44,7 @@ export default function Home() {
             <div className="flex flex-col gap-2 items-start xl:items-end">
               <h1 className="text-2xl lg:text-4xl drop-shadow-2xl font-semibold text-primary xl:text-end">Crafted by Passion, Driven by Purpose</h1>
               <div className="flex flex-col gap-2 text-sm lg:text-md drop-shadow-2xl text-primary/80 text-justify xl:text-end">
-                <h2>RECO is the result of a solo developer's vision to simplify the online shopping experience using modern technology and intelligent systems. With a deep interest in software development, machine learning, and UI/UX design, this project was born out of a desire to build something truly helpful and impactful.<span className="hidden xl:inline">While the team may be small today, the ambition is big — to create a platform that feels personal, smart, and truly user-centric. Along the journey, RECO is also supported by AI tools that help shape the development process, including content refinement and interface ideation.</span></h2>
+                <h2>RECO is the result of a solo developer&#39;s vision to simplify the online shopping experience using modern technology and intelligent systems. With a deep interest in software development, machine learning, and UI/UX design, this project was born out of a desire to build something truly helpful and impactful.<span className="hidden xl:inline">While the team may be small today, the ambition is big — to create a platform that feels personal, smart, and truly user-centric. Along the journey, RECO is also supported by AI tools that help shape the development process, including content refinement and interface ideation.</span></h2>
                 <h2 className="xl:hidden">While the team may be small today, the ambition is big — to create a platform that feels personal, smart, and truly user-centric. Along the journey, RECO is also supported by AI tools that help shape the development process, including content refinement and interface ideation.</h2>
               </div>
             </div>
