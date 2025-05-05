@@ -13,8 +13,8 @@ export default function Chat() {
           className="absolute z-0"
 
         />
-        <div className="relative z-10 text-white">
-          <h1 className="text-3xl md:text-5xl lg:text-7xl drop-shadow-2xl bg-background/80 rounded-lg p-4 font-bold text-primary text-center">THIS FEATURE IS NOT AVAILABLE YET!</h1>
+        <div className="relative z-10 text-white bg-background/80 w-full">
+          <h1 className="text-3xl md:text-5xl lg:text-7xl drop-shadow-2xl p-4 font-bold text-primary text-center">THIS FEATURE IS NOT AVAILABLE YET!</h1>
         </div>
       </div>
     </>

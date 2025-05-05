@@ -86,7 +86,7 @@ export default function Navbar() {
             )} */}
             <ul className={`flex flex-col absolute bg-background top-10 w-full sm:hidden py-4 z-40 rounded-b-lg transition-all duration-300 ease-in-out ${isOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-4 pointer-events-none"}`}>
                 {menu.map((item, index) => (
-                    <Link key={index} href={item.url}>
+                    <Link key={index} href={item.url} onClick={() => setIsOpen(!isOpen)}>
                         <li className="px-5 py-2 hover:bg-accent hover:text-accent-foreground transition duration-200">
                             <span className="text-primary">{item.title}</span>
                         </li>
