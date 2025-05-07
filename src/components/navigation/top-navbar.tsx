@@ -30,8 +30,8 @@ const menu = [
         url: "/about",
     },
     {
-        title: "Login/Register",
-        url: "/auth",
+        title: "Login",
+        url: "/auth/login",
     },
 ]
 
@@ -63,7 +63,7 @@ export default function Navbar() {
                     <NavigationMenuList className="flex">
                         {menu.map((item, index) => (
                             <NavigationMenuItem key={index}>
-                                <NavigationMenuLink href={item.url} className={`px-3 text-primary/70 ${pathname === item.url ? "text-primary" : ""}`}>
+                                <NavigationMenuLink href={item.url} className={`px-3 text-primary/50 ${pathname === item.url ? "text-primary" : ""}`}>
                                     {item.title}
                                 </NavigationMenuLink>
                             </NavigationMenuItem>
